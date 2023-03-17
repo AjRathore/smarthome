@@ -1,0 +1,1 @@
+enum ThermostatChildLock { unlock, lock }

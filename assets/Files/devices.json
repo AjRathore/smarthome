@@ -1,0 +1,1127 @@
+[
+   {
+      "definition":null,
+      "disabled":false,
+      "endpoints":{
+         "1":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "10":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "11":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  "ssIasAce",
+                  "genTime"
+               ],
+               "output":[
+                  "ssIasZone",
+                  "ssIasWd"
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "110":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "12":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "13":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  "genOta"
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "2":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "242":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "3":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "4":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "47":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "5":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "6":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "8":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  
+               ],
+               "output":[
+                  
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         }
+      },
+      "friendly_name":"Coordinator",
+      "ieee_address":"0x00124b0029dae78e",
+      "interview_completed":true,
+      "interviewing":false,
+      "network_address":0,
+      "supported":false,
+      "type":"Coordinator"
+   },
+   {
+      "date_code":"20160516",
+      "definition":{
+         "description":"MiJia temperature & humidity sensor",
+         "exposes":[
+            {
+               "access":1,
+               "description":"Remaining battery in %, can take up to 24 hours before reported.",
+               "name":"battery",
+               "property":"battery",
+               "type":"numeric",
+               "unit":"%",
+               "value_max":100,
+               "value_min":0
+            },
+            {
+               "access":1,
+               "description":"Measured temperature value",
+               "name":"temperature",
+               "property":"temperature",
+               "type":"numeric",
+               "unit":"°C"
+            },
+            {
+               "access":1,
+               "description":"Measured relative humidity",
+               "name":"humidity",
+               "property":"humidity",
+               "type":"numeric",
+               "unit":"%"
+            },
+            {
+               "access":1,
+               "description":"Voltage of the battery in millivolts",
+               "name":"voltage",
+               "property":"voltage",
+               "type":"numeric",
+               "unit":"mV"
+            },
+            {
+               "access":1,
+               "description":"Link quality (signal strength)",
+               "name":"linkquality",
+               "property":"linkquality",
+               "type":"numeric",
+               "unit":"lqi",
+               "value_max":255,
+               "value_min":0
+            }
+         ],
+         "model":"WSDCGQ01LM",
+         "options":[
+            {
+               "access":2,
+               "description":"Calibrates the temperature value (absolute offset), takes into effect on next report of device.",
+               "name":"temperature_calibration",
+               "property":"temperature_calibration",
+               "type":"numeric"
+            },
+            {
+               "access":2,
+               "description":"Number of digits after decimal point for temperature, takes into effect on next report of device.",
+               "name":"temperature_precision",
+               "property":"temperature_precision",
+               "type":"numeric",
+               "value_max":3,
+               "value_min":0
+            },
+            {
+               "access":2,
+               "description":"Number of digits after decimal point for humidity, takes into effect on next report of device.",
+               "name":"humidity_precision",
+               "property":"humidity_precision",
+               "type":"numeric",
+               "value_max":3,
+               "value_min":0
+            },
+            {
+               "access":2,
+               "description":"Calibrates the humidity value (absolute offset), takes into effect on next report of device.",
+               "name":"humidity_calibration",
+               "property":"humidity_calibration",
+               "type":"numeric"
+            }
+         ],
+         "supports_ota":false,
+         "vendor":"Xiaomi"
+      },
+      "disabled":false,
+      "endpoints":{
+         "1":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  "genBasic",
+                  "genIdentify",
+                  "genOta",
+                  "65535",
+                  "genMultistateInput"
+               ],
+               "output":[
+                  "genBasic",
+                  "genGroups",
+                  "genIdentify",
+                  "genScenes",
+                  "genOta",
+                  "65535",
+                  "genMultistateInput"
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "2":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  "genIdentify",
+                  "genMultistateInput"
+               ],
+               "output":[
+                  "genGroups",
+                  "genIdentify",
+                  "genScenes",
+                  "genMultistateInput"
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         },
+         "3":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  "genIdentify",
+                  "genAnalogInput"
+               ],
+               "output":[
+                  "genGroups",
+                  "genIdentify",
+                  "genScenes",
+                  "genAnalogInput"
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         }
+      },
+      "friendly_name":"LivingRoom_TempSensor",
+      "ieee_address":"0x00158d00053440ce",
+      "interview_completed":true,
+      "interviewing":false,
+      "manufacturer":"LUMI",
+      "model_id":"lumi.sensor_ht",
+      "network_address":42418,
+      "power_source":"Battery",
+      "software_build_id":"3000-0001",
+      "supported":true,
+      "type":"EndDevice"
+   },
+   {
+      "date_code":"20140331DEOS****",
+      "definition":{
+         "description":"Smart+ plug",
+         "exposes":[
+            {
+               "features":[
+                  {
+                     "access":7,
+                     "description":"On/off state of the switch",
+                     "name":"state",
+                     "property":"state",
+                     "type":"binary",
+                     "value_off":"OFF",
+                     "value_on":"ON",
+                     "value_toggle":"TOGGLE"
+                  }
+               ],
+               "type":"switch"
+            },
+            {
+               "access":1,
+               "description":"Link quality (signal strength)",
+               "name":"linkquality",
+               "property":"linkquality",
+               "type":"numeric",
+               "unit":"lqi",
+               "value_max":255,
+               "value_min":0
+            }
+         ],
+         "model":"AB3257001NJ",
+         "options":[
+            {
+               "access":2,
+               "description":"State actions will also be published as 'action' when true (default false).",
+               "name":"state_action",
+               "property":"state_action",
+               "type":"binary",
+               "value_off":false,
+               "value_on":true
+            }
+         ],
+         "supports_ota":true,
+         "vendor":"OSRAM"
+      },
+      "disabled":false,
+      "endpoints":{
+         "3":{
+            "bindings":[
+               {
+                  "cluster":"genOnOff",
+                  "target":{
+                     "endpoint":1,
+                     "ieee_address":"0x00124b0029dae78e",
+                     "type":"endpoint"
+                  }
+               }
+            ],
+            "clusters":{
+               "input":[
+                  "touchlink",
+                  "genBasic",
+                  "genIdentify",
+                  "genGroups",
+                  "genScenes",
+                  "genOnOff",
+                  "haElectricalMeasurement",
+                  "manuSpecificOsram"
+               ],
+               "output":[
+                  "genOta"
+               ]
+            },
+            "configured_reportings":[
+               {
+                  "attribute":"onOff",
+                  "cluster":"genOnOff",
+                  "maximum_report_interval":3600,
+                  "minimum_report_interval":0,
+                  "reportable_change":0
+               }
+            ],
+            "scenes":[
+               
+            ]
+         }
+      },
+      "friendly_name":"LivingRoom_Lamp",
+      "ieee_address":"0x7cb03eaa0a07f3ea",
+      "interview_completed":true,
+      "interviewing":false,
+      "manufacturer":"OSRAM",
+      "model_id":"Plug 01",
+      "network_address":24720,
+      "power_source":"Mains (single phase)",
+      "software_build_id":"V1.05.09",
+      "supported":true,
+      "type":"Router"
+   },
+   {
+      "date_code":"20140331DEOS****",
+      "definition":{
+         "description":"Smart+ plug",
+         "exposes":[
+            {
+               "features":[
+                  {
+                     "access":7,
+                     "description":"On/off state of the switch",
+                     "name":"state",
+                     "property":"state",
+                     "type":"binary",
+                     "value_off":"OFF",
+                     "value_on":"ON",
+                     "value_toggle":"TOGGLE"
+                  }
+               ],
+               "type":"switch"
+            },
+            {
+               "access":1,
+               "description":"Link quality (signal strength)",
+               "name":"linkquality",
+               "property":"linkquality",
+               "type":"numeric",
+               "unit":"lqi",
+               "value_max":255,
+               "value_min":0
+            }
+         ],
+         "model":"AB3257001NJ",
+         "options":[
+            {
+               "access":2,
+               "description":"State actions will also be published as 'action' when true (default false).",
+               "name":"state_action",
+               "property":"state_action",
+               "type":"binary",
+               "value_off":false,
+               "value_on":true
+            }
+         ],
+         "supports_ota":true,
+         "vendor":"OSRAM"
+      },
+      "disabled":false,
+      "endpoints":{
+         "3":{
+            "bindings":[
+               {
+                  "cluster":"genOnOff",
+                  "target":{
+                     "endpoint":1,
+                     "ieee_address":"0x00124b0029dae78e",
+                     "type":"endpoint"
+                  }
+               }
+            ],
+            "clusters":{
+               "input":[
+                  "touchlink",
+                  "genBasic",
+                  "genIdentify",
+                  "genGroups",
+                  "genScenes",
+                  "genOnOff",
+                  "haElectricalMeasurement",
+                  "manuSpecificOsram"
+               ],
+               "output":[
+                  "genOta"
+               ]
+            },
+            "configured_reportings":[
+               {
+                  "attribute":"onOff",
+                  "cluster":"genOnOff",
+                  "maximum_report_interval":3600,
+                  "minimum_report_interval":0,
+                  "reportable_change":0
+               }
+            ],
+            "scenes":[
+               
+            ]
+         }
+      },
+      "friendly_name":"Kitchen_Lamp",
+      "ieee_address":"0x7cb03eaa0a07cb03",
+      "interview_completed":true,
+      "interviewing":false,
+      "manufacturer":"OSRAM",
+      "model_id":"Plug 01",
+      "network_address":58181,
+      "power_source":"Mains (single phase)",
+      "software_build_id":"V1.05.09",
+      "supported":true,
+      "type":"Router"
+   },
+   {
+      "date_code":"",
+      "definition":{
+         "description":"Thermostatic radiator valve",
+         "exposes":[
+            {
+               "features":[
+                  {
+                     "access":3,
+                     "description":"Enables/disables physical input on the device",
+                     "name":"state",
+                     "property":"child_lock",
+                     "type":"binary",
+                     "value_off":"UNLOCK",
+                     "value_on":"LOCK"
+                  }
+               ],
+               "type":"lock"
+            },
+            {
+               "access":1,
+               "description":"Indicates if the battery of this device is almost empty",
+               "name":"battery_low",
+               "property":"battery_low",
+               "type":"binary",
+               "value_off":false,
+               "value_on":true
+            },
+            {
+               "features":[
+                  {
+                     "access":3,
+                     "description":"Temperature setpoint",
+                     "name":"current_heating_setpoint",
+                     "property":"current_heating_setpoint",
+                     "type":"numeric",
+                     "unit":"°C",
+                     "value_max":35,
+                     "value_min":5,
+                     "value_step":1
+                  },
+                  {
+                     "access":1,
+                     "description":"Current temperature measured on the device",
+                     "name":"local_temperature",
+                     "property":"local_temperature",
+                     "type":"numeric",
+                     "unit":"°C"
+                  },
+                  {
+                     "access":3,
+                     "description":"Mode of this device",
+                     "name":"system_mode",
+                     "property":"system_mode",
+                     "type":"enum",
+                     "values":[
+                        "auto",
+                        "heat",
+                        "off"
+                     ]
+                  },
+                  {
+                     "access":1,
+                     "description":"The current running state",
+                     "name":"running_state",
+                     "property":"running_state",
+                     "type":"enum",
+                     "values":[
+                        "idle",
+                        "heat"
+                     ]
+                  },
+                  {
+                     "access":3,
+                     "description":"Offset to be used in the local_temperature",
+                     "name":"local_temperature_calibration",
+                     "property":"local_temperature_calibration",
+                     "type":"numeric",
+                     "unit":"°C",
+                     "value_max":3,
+                     "value_min":-3,
+                     "value_step":1
+                  }
+               ],
+               "type":"climate"
+            },
+            {
+               "access":3,
+               "description":"If the heat sink is not fully opened within two weeks or is not used for a long time, the valve will be blocked due to silting up and the heat sink will not be able to be used. To ensure normal use of the heat sink, the controller will automatically open the valve fully every two weeks. It will run for 30 seconds per time with the screen displaying \"Ad\", then return to its normal working state again.",
+               "name":"scale_protection",
+               "property":"scale_protection",
+               "type":"binary",
+               "value_off":"OFF",
+               "value_on":"ON"
+            },
+            {
+               "access":3,
+               "description":"When the room temperature is lower than 5 °C, the valve opens; when the temperature rises to 8 °C, the valve closes.",
+               "name":"frost_protection",
+               "property":"frost_protection",
+               "type":"binary",
+               "value_off":"OFF",
+               "value_on":"ON"
+            },
+            {
+               "access":1,
+               "description":"If NTC is damaged, \"Er\" will be on the TRV display.",
+               "name":"error",
+               "property":"error",
+               "type":"numeric"
+            },
+            {
+               "access":1,
+               "description":"Link quality (signal strength)",
+               "name":"linkquality",
+               "property":"linkquality",
+               "type":"numeric",
+               "unit":"lqi",
+               "value_max":255,
+               "value_min":0
+            }
+         ],
+         "model":"TS0601_thermostat_3",
+         "options":[
+            
+         ],
+         "supports_ota":false,
+         "vendor":"TuYa"
+      },
+      "disabled":false,
+      "endpoints":{
+         "1":{
+            "bindings":[
+               
+            ],
+            "clusters":{
+               "input":[
+                  "genGroups",
+                  "genScenes",
+                  "manuSpecificTuya",
+                  "genBasic"
+               ],
+               "output":[
+                  "genOta",
+                  "genTime"
+               ]
+            },
+            "configured_reportings":[
+               
+            ],
+            "scenes":[
+               
+            ]
+         }
+      },
+      "friendly_name":"LivingRoom_Thermostat",
+      "ieee_address":"0xa4c1380459bfa913",
+      "interview_completed":true,
+      "interviewing":false,
+      "manufacturer":"_TZE200_6rdj8dzm",
+      "model_id":"TS0601",
+      "network_address":13829,
+      "power_source":"Battery",
+      "supported":true,
+      "type":"EndDevice"
+   },
+   {
+      "date_code":"20140331DEOS****",
+      "definition":{
+         "description":"Hue white ambiance Aurelle round panel lamp",
+         "exposes":[
+            {
+               "features":[
+                  {
+                     "access":7,
+                     "description":"On/off state of the switch",
+                     "name":"state",
+                     "property":"state",
+                     "type":"binary",
+                     "value_off":"OFF",
+                     "value_on":"ON",
+                     "value_toggle":"TOGGLE"
+                  }
+               ],
+               "type":"switch"
+            },
+            {
+               "access":1,
+               "description":"Link quality (signal strength)",
+               "name":"linkquality",
+               "property":"linkquality",
+               "type":"numeric",
+               "unit":"lqi",
+               "value_max":255,
+               "value_min":0
+            }
+         ],
+         "model":"3216431P5",
+         "options":[
+            {
+               "access":2,
+               "description":"State actions will also be published as 'action' when true (default false).",
+               "name":"state_action",
+               "property":"state_action",
+               "type":"binary",
+               "value_off":false,
+               "value_on":true
+            }
+         ],
+         "supports_ota":true,
+         "vendor":"Philips"
+      },
+      "disabled":false,
+      "endpoints":{
+         "3":{
+            "bindings":[
+               {
+                  "cluster":"genOnOff",
+                  "target":{
+                     "endpoint":1,
+                     "ieee_address":"0x00124b0029dae78e",
+                     "type":"endpoint"
+                  }
+               }
+            ],
+            "clusters":{
+               "input":[
+                  "touchlink",
+                  "genBasic",
+                  "genIdentify",
+                  "genGroups",
+                  "genScenes",
+                  "genOnOff",
+                  "haElectricalMeasurement",
+                  "manuSpecificOsram"
+               ],
+               "output":[
+                  "genOta"
+               ]
+            },
+            "configured_reportings":[
+               {
+                  "attribute":"onOff",
+                  "cluster":"genOnOff",
+                  "maximum_report_interval":3600,
+                  "minimum_report_interval":0,
+                  "reportable_change":0
+               }
+            ],
+            "scenes":[
+               
+            ]
+         }
+      },
+      "friendly_name":"LivingRoom_Light",
+      "ieee_address":"0x7cb03eaa0a07f3eabc",
+      "interview_completed":true,
+      "interviewing":false,
+      "manufacturer":"Philips",
+      "model_id":"Plug 01",
+      "network_address":247203,
+      "power_source":"Mains (single phase)",
+      "software_build_id":"V1.05.09",
+      "supported":true,
+      "type":"Router"
+   },
+   {
+      "date_code":"20140331DEOS****",
+      "definition":{
+         "description":"Hue white ambiance Aurelle round panel lamp",
+         "exposes":[
+            {
+               "features":[
+                  {
+                     "access":7,
+                     "description":"On/off state of the switch",
+                     "name":"state",
+                     "property":"state",
+                     "type":"binary",
+                     "value_off":"OFF",
+                     "value_on":"ON",
+                     "value_toggle":"TOGGLE"
+                  }
+               ],
+               "type":"switch"
+            },
+            {
+               "access":1,
+               "description":"Link quality (signal strength)",
+               "name":"linkquality",
+               "property":"linkquality",
+               "type":"numeric",
+               "unit":"lqi",
+               "value_max":255,
+               "value_min":0
+            }
+         ],
+         "model":"3216431P5",
+         "options":[
+            {
+               "access":2,
+               "description":"State actions will also be published as 'action' when true (default false).",
+               "name":"state_action",
+               "property":"state_action",
+               "type":"binary",
+               "value_off":false,
+               "value_on":true
+            }
+         ],
+         "supports_ota":true,
+         "vendor":"Philips"
+      },
+      "disabled":false,
+      "endpoints":{
+         "3":{
+            "bindings":[
+               {
+                  "cluster":"genOnOff",
+                  "target":{
+                     "endpoint":1,
+                     "ieee_address":"0x00124b0029dae78e",
+                     "type":"endpoint"
+                  }
+               }
+            ],
+            "clusters":{
+               "input":[
+                  "touchlink",
+                  "genBasic",
+                  "genIdentify",
+                  "genGroups",
+                  "genScenes",
+                  "genOnOff",
+                  "haElectricalMeasurement",
+                  "manuSpecificOsram"
+               ],
+               "output":[
+                  "genOta"
+               ]
+            },
+            "configured_reportings":[
+               {
+                  "attribute":"onOff",
+                  "cluster":"genOnOff",
+                  "maximum_report_interval":3600,
+                  "minimum_report_interval":0,
+                  "reportable_change":0
+               }
+            ],
+            "scenes":[
+               
+            ]
+         }
+      },
+      "friendly_name":"BedRoom_Light",
+      "ieee_address":"0x7cb03eaa0a07f3eabcd",
+      "interview_completed":true,
+      "interviewing":false,
+      "manufacturer":"Philips",
+      "model_id":"Plug 01",
+      "network_address":2472031,
+      "power_source":"Mains (single phase)",
+      "software_build_id":"V1.05.09",
+      "supported":true,
+      "type":"Router"
+   },
+   {
+      "date_code":"20140331DEOS****",
+      "definition":{
+         "description":"Magnetic door & window contact sensor",
+         "exposes":[
+            {
+               "features":[
+                  {
+                     "access":7,
+                     "description":"On/off state of the switch",
+                     "name":"state",
+                     "property":"state",
+                     "type":"binary",
+                     "value_off":"OFF",
+                     "value_on":"ON",
+                     "value_toggle":"TOGGLE"
+                  }
+               ],
+               "type":"switch"
+            },
+            {
+               "access":1,
+               "description":"Link quality (signal strength)",
+               "name":"linkquality",
+               "property":"linkquality",
+               "type":"numeric",
+               "unit":"lqi",
+               "value_max":255,
+               "value_min":0
+            }
+         ],
+         "model":"AU-A1ZBDWS",
+         "options":[
+            {
+               "access":2,
+               "description":"State actions will also be published as 'action' when true (default false).",
+               "name":"state_action",
+               "property":"state_action",
+               "type":"binary",
+               "value_off":false,
+               "value_on":true
+            }
+         ],
+         "supports_ota":true,
+         "vendor":"Aurora Lightning"
+      },
+      "disabled":false,
+      "endpoints":{
+         "3":{
+            "bindings":[
+               {
+                  "cluster":"genOnOff",
+                  "target":{
+                     "endpoint":1,
+                     "ieee_address":"0x00124b0029dae78e",
+                     "type":"endpoint"
+                  }
+               }
+            ],
+            "clusters":{
+               "input":[
+                  "touchlink",
+                  "genBasic",
+                  "genIdentify",
+                  "genGroups",
+                  "genScenes",
+                  "genOnOff",
+                  "haElectricalMeasurement",
+                  "manuSpecificOsram"
+               ],
+               "output":[
+                  "genOta"
+               ]
+            },
+            "configured_reportings":[
+               {
+                  "attribute":"onOff",
+                  "cluster":"genOnOff",
+                  "maximum_report_interval":3600,
+                  "minimum_report_interval":0,
+                  "reportable_change":0
+               }
+            ],
+            "scenes":[
+               
+            ]
+         }
+      },
+      "friendly_name":"LivingRoom_WindowSensor",
+      "ieee_address":"0x7cb03eaa0a07f3eabce",
+      "interview_completed":true,
+      "interviewing":false,
+      "manufacturer":"Aurora Lightning",
+      "model_id":"Plug 01",
+      "network_address":2472035,
+      "power_source":"Mains (single phase)",
+      "software_build_id":"V1.05.09",
+      "supported":true,
+      "type":"Router"
+   }
+]
